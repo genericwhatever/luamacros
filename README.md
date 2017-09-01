@@ -20,7 +20,7 @@ Download [luamacros.zip](http://www.hidmacros.eu/luamacros.zip).
 
 # Developers Guide
 To compile & extend Luamacros yourself, you must:
-* Download & install the lates Lazarus environment: https://www.lazarus-ide.org/
+* Download & install the latest Lazarus environment: https://www.lazarus-ide.org/
 * Clone Luamacros code from this repository: https://github.com/me2d13/luamacros.git
 * Before opening luamacros project you need to install several packages into Lazarus IDE. They are located in the lib subfolder. Maybe this could be somehow included into Lazarus project, but I'm not such expert - just found a way that works. Those packages are:
   * Inetbase - for http communication 
