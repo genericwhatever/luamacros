@@ -61,9 +61,9 @@ const
   MaxSendKeyRecs = 64;
   SendKeyRecs : array[1..MaxSendKeyRecs] of TSendKey =
   (
+   (Name:'BACKSPACE';       VKey:VK_BACK),
    (Name:'BKSP';            VKey:VK_BACK),
    (Name:'BS';              VKey:VK_BACK),
-   (Name:'BACKSPACE';       VKey:VK_BACK),
    (Name:'BREAK';           VKey:VK_CANCEL),
    (Name:'CAPSLOCK';        VKey:VK_CAPITAL),
    (Name:'CLEAR';           VKey:VK_CLEAR),
