@@ -1,6 +1,6 @@
 # Luamacros
 This software can recognize and manage multiple keyboards connected to your computer with Windows OS. This key feature allows you to use it as a macro triggering application.
-Other typical usage is for flight simulation, where macro triggers can come from various sources, like:
+Other typical usage is for flight simulation, where macro triggers can come from various sources:
 * Secondary keyboards
 * Game controllers (Joysticks)
 * COM interface (Arduino)
@@ -34,4 +34,4 @@ To compile & extend Luamacros yourself, you must:
   * WinHook - dll to set global keyboard hook
 * When starting from your build environment make sure you copy LUA dlls (see lib folder) into your output directory. These dlls must be in the same directory as LuaMacros.exe. Without them the program won't even start, or will crash with some segmentation error (in IDE).
 
-Hope it helps, have fun, feel free to extend this guide
+Hope it helps! Have fun and feel free to extend this guide.
