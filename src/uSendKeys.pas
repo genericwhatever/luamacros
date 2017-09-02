@@ -241,7 +241,7 @@ begin
             PopUpShiftKeys;
             Inc(I);
           end;
-    '%' : begin
+    '%' : begin // Alt Key
              fShiftsDown[ShiftIndex+1] := True;
              SendKeyDown(ShiftsVK[ShiftIndex+1] ,1,False);
              if ShiftIndex > 4 then
@@ -249,7 +249,7 @@ begin
              else
                Inc(I);
           end;
-    '+' :  begin
+    '+' :  begin // Shift Key
              fShiftsDown[ShiftIndex+2] := True;
              SendKeyDown(ShiftsVK[ShiftIndex+2] ,1,False);
              if ShiftIndex > 4 then
@@ -257,7 +257,7 @@ begin
              else
                Inc(I);
            end;
-    '^' :  begin
+    '^' :  begin // Ctrl Key
              fShiftsDown[ShiftIndex] := True;
              SendKeyDown(ShiftsVK[ShiftIndex] ,1,False);
              if ShiftIndex > 4 then
@@ -265,7 +265,7 @@ begin
              else
                Inc(I);
            end;
-    '#' :  begin
+    '#' :  begin // Win Key
              fShiftsDown[ShiftIndex+3] := True;
              SendKeyDown(ShiftsVK[ShiftIndex+3] ,1,False);
              if ShiftIndex > 4 then
@@ -273,7 +273,7 @@ begin
              else
                Inc(I);
            end;
-    '&' :  begin
+    '&' :  begin // Tab Key
              fShiftsDown[ShiftIndex+4] := True;
              SendKeyDown(ShiftsVK[ShiftIndex+4] ,1,False);
              if ShiftIndex > 4 then
@@ -475,6 +475,7 @@ begin
     if fShiftsDown[I] then SendKeyUp(ShiftsVK[I]);
     fShiftsDown[I] := False;
   end
+  // should probably wait a tiny fraction of a second to let windows notice the keyup
 end;
 
 
