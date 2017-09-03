@@ -238,15 +238,15 @@ const
 // Define the keyboard input data Flags.
 //
  
-  RI_KEY_MAKE            = 0;
+  RI_KEY_MAKE            = $00;
   {$EXTERNALSYM RI_KEY_MAKE}
-  RI_KEY_BREAK           = 1;
+  RI_KEY_BREAK           = $01;
   {$EXTERNALSYM RI_KEY_BREAK}
-  RI_KEY_E0              = 2;
+  RI_KEY_E0              = $02;
   {$EXTERNALSYM RI_KEY_E0}
-  RI_KEY_E1              = 4;
+  RI_KEY_E1              = $04;
   {$EXTERNALSYM RI_KEY_E1}
-  RI_KEY_TERMSRV_SET_LED = 8;
+  RI_KEY_TERMSRV_SET_LED = $08;
   {$EXTERNALSYM RI_KEY_TERMSRV_SET_LED}
   RI_KEY_TERMSRV_SHADOW  = $10;
   {$EXTERNALSYM RI_KEY_TERMSRV_SHADOW}
