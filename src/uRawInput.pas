@@ -178,9 +178,9 @@ const
 // Define the mouse indicator flags.
 //
  
-  MOUSE_MOVE_RELATIVE      = 0;
+  MOUSE_MOVE_RELATIVE      = $00;
   {$EXTERNALSYM MOUSE_MOVE_RELATIVE}
-  MOUSE_MOVE_ABSOLUTE      = 1;
+  MOUSE_MOVE_ABSOLUTE      = $01;
   {$EXTERNALSYM MOUSE_MOVE_ABSOLUTE}
   MOUSE_VIRTUAL_DESKTOP    = $02; // the coordinates are mapped to the virtual desktop
   {$EXTERNALSYM MOUSE_VIRTUAL_DESKTOP}
